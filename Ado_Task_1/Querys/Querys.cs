@@ -11,7 +11,7 @@ namespace ADO_Lesson_1.Querys
         public static string CheckDB = @"
                     USE [master];
                     
-                    IF db_id('StudentsDB') IF  NULL
+                    IF db_id('StudentsDB') IS  NULL
                     BEGIN
                     	create database StudentsDB;
                     END";
